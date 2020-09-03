@@ -29,7 +29,7 @@ class TwitsController < ApplicationController
 
     respond_to do |format|
       if @twit.save
-        format.html { redirect_to @twit, notice: 'Twit was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Twit was successfully created.' }
         format.json { render :show, status: :created, location: @twit }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class TwitsController < ApplicationController
   def update
     respond_to do |format|
       if @twit.update(twit_params)
-        format.html { redirect_to @twit, notice: 'Twit was successfully updated.' }
+        format.html { redirect_to root_path, notice: 'Twit was successfully updated.' }
         format.json { render :show, status: :ok, location: @twit }
       else
         format.html { render :edit }
