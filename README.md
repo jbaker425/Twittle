@@ -23,3 +23,5 @@ This is a mock Twitter app name "Twittle". Users can make accounts and sign in a
     -better_errors 2.7.1
     -guard 2.16.2
     -guard-livereload 2.5.2 (require: false)
+
+* Homepage: ![TwittleSample](/app/assets/images/TwittleSample.JPG)
